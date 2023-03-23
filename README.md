@@ -6,4 +6,4 @@
 
 getOnline.js  
 1.npm install  
-2.暂时手动改地址、cookie获取接口数据
+2.控制台输入id and cookie获取接口数据(举例：1 and cookie123)
