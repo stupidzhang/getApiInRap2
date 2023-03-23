@@ -1,0 +1,97 @@
+{
+    "info":{
+        "name":"RAP2 Pack",
+        "schema":""
+    },
+    "item":[
+        {
+            "name":"示例模块",
+            "item":[
+                {
+                    "name":"示例接口",
+                    "request":{
+                        "method":"GET",
+                        "header":[
+
+                        ],
+                        "body":{
+                            "mode":"formdata",
+                            "formdata":[
+
+                            ]
+                        },
+                        "url":{
+                            "raw":"{{url}}/example/1678072887989",
+                            "host":"{{url}}",
+                            "port":"",
+                            "hash":null,
+                            "path":[
+                                "/example/1678072887989"
+                            ],
+                            "query":[
+                                {
+                                    "key":"foo",
+                                    "value":"@ctitle",
+                                    "description":"请求属性示例"
+                                }
+                            ]
+                        },
+                        "description":"示例接口描述"
+                    },
+                    "response":[
+                        {
+                            "key":"string",
+                            "value":"★"
+                        },
+                        {
+                            "key":"number",
+                            "value":"1"
+                        },
+                        {
+                            "key":"boolean",
+                            "value":"true"
+                        },
+                        {
+                            "key":"regexp",
+                            "value":"/[a-z][A-Z][0-9]/"
+                        },
+                        {
+                            "key":"function",
+                            "value":"() =&gt; Math.random()"
+                        },
+                        {
+                            "key":"array",
+                            "value":""
+                        },
+                        {
+                            "key":"foo",
+                            "value":"1"
+                        },
+                        {
+                            "key":"bar",
+                            "value":"★"
+                        },
+                        {
+                            "key":"items",
+                            "value":"[1, true, 'hello', /\\w{10}/]"
+                        },
+                        {
+                            "key":"object",
+                            "value":""
+                        },
+                        {
+                            "key":"foo",
+                            "value":"1"
+                        },
+                        {
+                            "key":"bar",
+                            "value":"★"
+                        },
+                        {
+                            "key":"placeholder",
+                            "value":"@title"
+                        }
+                    ]
+                }
+            ] }
+]}

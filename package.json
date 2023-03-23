@@ -1,0 +1,23 @@
+{
+  "name": "getApiInRap2",
+  "version": "1.0.0",
+  "description": "修改了rap2导出的json文件的格式",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stupidzhang/getApiInRap2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stupidzhang/getApiInRap2/issues"
+  },
+  "homepage": "https://github.com/stupidzhang/getApiInRap2#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
