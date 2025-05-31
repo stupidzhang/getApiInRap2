@@ -1,7 +1,7 @@
 var request = require("request");
 var fs = require("fs");
+const path = require('path');
 const readline = require("readline"); //在这里引入
-
 const rl = readline.createInterface({
   //创建输入输出接口
   input: process.stdin,
@@ -47,7 +47,16 @@ const getApi = function () {
         console.log("该仓库无接口");
         return;
       }
-      fs.mkdir(`./${jsonData.data.name}`, (error) => {
+      const dirName = `./${jsonData.data.name}`
+      if(fs.existsSync(dirName)){
+        fs.readdirSync(dirName).forEach(file => {
+          const curPath = path.join(dirName, file);
+          fs.unlinkSync(curPath);
+      });
+      fs.rmdirSync(dirName);
+      }else{
+      }
+      fs.mkdir(dirName, (error) => {
         if (error) {
           console.log(error);
         } else {
